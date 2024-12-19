@@ -15,14 +15,20 @@ import data from "./data"
 
 export default function App() {
     const dataElements = data.map((item) => {
-        return <Entry 
-                    img={}
+        return (
+            <Entry 
+                    img={{
+                        src: item.img.src,
+                        alt: item.img.alt 
+                    }}
+                    // or just img={item.img}
                     title={item.title}
                     country={item.country}
                     googleMapsLink={item.googleMapsLink}
                     dates={item.dates}
                     text={item.text}
                 />
+        )
     })
     return (
         <>

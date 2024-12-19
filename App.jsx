@@ -16,7 +16,7 @@ import data from "./data"
 export default function App() {
     const dataElements = data.map((item) => {
         return (
-            <Entry 
+            <Entry
                     img={{
                         src: item.img.src,
                         alt: item.img.alt 

@@ -17,6 +17,7 @@ export default function App() {
     const dataElements = data.map((item) => {
         return (
             <Entry
+                    key={item.id}
                     img={{
                         src: item.img.src,
                         alt: item.img.alt 

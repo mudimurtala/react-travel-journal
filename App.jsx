@@ -28,6 +28,7 @@ export default function App() {
             <main className="container">
                 {dataElements}
             </main>
+            <Header />
         </>
     )
 }
